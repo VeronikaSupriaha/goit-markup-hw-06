@@ -151,9 +151,23 @@ button {
         margin-right: 0px;
     }
 
+    .contacts-list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
     .contacts {
         display: block;
 
+    }
+
+    .contacts-item {
+        color: var(--SLATE, #434455);
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.17;
+            letter-spacing: 0.04em;
     }
 
     .logo {
@@ -190,7 +204,7 @@ button {
 /*---------------DESKTOP PAGE HEADER--------------------------*/
 
 
-@media screen and (min-width: 1168px) {
+@media screen and (min-width: 1158px) {
 
 .container {
             max-width: 1158px;
@@ -227,11 +241,17 @@ margin-right: 76px;
 
 .contacts-list {
     display: flex;
+    flex-direction: row;
     column-gap: 40px;
 }
 
 .contacts-item {
-    margin-right: 40px;
+    margin-right: 0px;
+    color: var(--SLATE, #434455);
+font-size: 16px;
+font-weight: 400;
+line-height: 1.5; 
+letter-spacing: 0.02em;
 }
 
 .navigation-item {
@@ -327,7 +347,9 @@ margin-right: 76px;
 
     .main-title {
     color: var(--WHITE, #FFF);
-    max-width: 288px;
+    max-width: 168px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     font-size: 36px;
     font-style: normal;
@@ -388,7 +410,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
 /*--------------DESKTOP ORDER SERVICE----------*/
 
-@media screen and (min-width: 1168px) {
+@media screen and (min-width: 1158px) {
     .order {
         max-width: 1440px;
         background-color: #2E2F42;
@@ -465,6 +487,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         display: flex;
         flex-direction: row;
         gap: 24px;
+        row-gap: 72px;
         flex-wrap: wrap;
         margin: 0 auto;
     }
@@ -482,7 +505,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
 /*-----------------DESKTOP OUR ADVANTAGE----------*/
 
-@media screen and (min-width: 1168px) {
+@media screen and (min-width: 1158px) {
 .advantage-icon {
             width: 264px;
             height: 112px;
@@ -525,6 +548,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
 .description {
     font-size: 16px;
+    font-weight: 400px;
     line-height: 1.5;
     color: #434455;
     letter-spacing: 0.02em;
@@ -619,10 +643,10 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 @media screen and (min-width: 768px) {
     
     .team-list {
-    row-gap: 64px;
     align-items: center;
     display: flex;
     gap: 24px;
+    row-gap: 64px;
     justify-content: center;
     }
 
@@ -632,7 +656,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 }
 
 /*------------DESKTOP OUR TEAM---------------------*/
-@media screen and (min-width: 1168px) {
+@media screen and (min-width: 1158px) {
 .team-item {
     flex-basis: calc((100% - 3 * 24px) / 4);
      }
@@ -679,11 +703,11 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
 @media screen and (min-width: 768px) {
     .portfolio-list {
-        row-gap: 72px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        gap: 24px;     
+        gap: 24px;
+        row-gap: 72px;
     }
 
     .portfolio-item {
@@ -693,7 +717,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
 /*---------------DESKTOP OUR PORTFOLIO--------------------*/
 
-@media screen and (min-width: 1168px) {
+@media screen and (min-width: 1158px) {
 
 .portfolio-list {
         column-gap: 24px;
@@ -904,8 +928,10 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 .footer-sct {
     flex-direction: row;
     flex-wrap: wrap;
+    width: 584px;
     gap: 24px;
-    padding-left: 108px;
+    row-gap: 72px;
+
     }
 
 .logo-container {
@@ -941,7 +967,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
 /*---------DESKTOP PAGE FOOTER---------*/
 
-@media screen and (min-width: 1168px) {
+@media screen and (min-width: 1158px) {
 
 .footer-sct {
         display: flex;
@@ -949,7 +975,11 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: nowrap;
+        width: 100%;
         padding-left: 0;
+        gap: unset;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 .footer-container {
@@ -1037,7 +1067,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px 16px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1174,6 +1204,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
 .order-checkbox-wrapper {
     margin-bottom: 24px;
+   
 }
 
 .order-checkbox-label {
@@ -1182,13 +1213,20 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
+   
+    
 }
+
+
 
 .checkbox-link {
     text-decoration: underline;
     color: #4D5AE5;
 }
 
+.text-policy {
+
+}
 .order-form-own-checkbox {
     display: inline-flex;
     align-items: center;
@@ -1198,7 +1236,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     border: 1px solid rgba(46, 47, 66, 0.40);
     border-radius: 2px;
     cursor: pointer;
-    margin-right: 8px;
     fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1261,8 +1298,12 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 }
 
 /*-----------mobile menu---------------*/
+.social-contacts-container {
+    margin-top: auto;
+}
 
 .mobile-menu-wrapper {
+    display: flex;
     position: fixed;
         top: 0;
         left: 0;
@@ -1278,15 +1319,14 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 }
 
 .mobile-menu-container {
-    width: 320px;
-        min-height: 640px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+        height: 100%;
         background-color: #fff;
         border-radius: 4px;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 8px 16px 24px 16px;
+        padding: 100px 16px 40px 16px;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1295,9 +1335,6 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 .navigation-mobile {
     display: flex;
     flex-direction: column;
-    gap: 168px;
-    margin-top: 72px;
-    margin-bottom: 48px;
 }
 
 .page-navigation-menu {
@@ -1328,6 +1365,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 
 .contacts-menu {
     display: flex;
+    margin-bottom: 46px;
 }
 
 .contacts-list-menu {
